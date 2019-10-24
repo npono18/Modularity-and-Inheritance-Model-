@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package sdlc_assignment;
+import java.util.Scanner;
 
 /**
  *
@@ -11,9 +12,15 @@ package sdlc_assignment;
  */
 
 public class cube {
-    int length;
-    public cube(int length){
-        this.length=length;
-      
+Scanner sc = new Scanner(System.in);
+    int l;
+    double sa(double l, double w){
+        return(l*w*6);
     }
-}
+        void inputs(){
+        System.out.println("Please enter a length for your cube: ");
+        int l =sc.nextInt();
+
+    }
+    }
+

@@ -21,28 +21,51 @@ public class SDLC_assignment {
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to the surface area and volume calculator!");
         System.out.println("You have the choice of the following 3D shapes: ");
-        System.out.println("1. Cube");
-        System.out.println("2. Rectangular Based Prism");
-        System.out.println("3. Triangular Based Prism");
-        System.out.println("4. Cylinder");
-        System.out.println("5. Cone");
-        int number = sc.nextInt();
-            do {
-                System.out.println("Enter the corresponding number to the shape you want: ");
-                while (!sc.hasNextInt()) {
-                    System.out.println("That's not a correct number!");
-                    sc.next();
+        System.out.println("1. Cube.");
+        System.out.println("2. Rectangular Based Prism.");
+        System.out.println("3. Triangular Based Prism.");
+        System.out.println("4. Cylinder.");
+        System.out.println("5. Cone.");
+        System.out.println("Which shape do you want to select?: ");
+        int i = 0;
+        while(i<100){
+            try{
+                int number =sc.nextInt();
+                if (number < 0 || number>=6){
+                    throw new Exception();                    
                 }
-                number = sc.nextInt();
-            } while (number<0 && number>=6);
-            System.out.println("Thank you, you entered: " + number);
-        
-        
-        
-        
-        
-        //cube cube1 = new cube()
+                if (number == 1){
+                    System.out.println("You have chosen a cube!");
+                    cube cube1 = new cube();
+                    
 
+                }
+                if (number == 2){
+                    System.out.println("You have chosen a rectangular based prism!");
+                }
+                if (number == 3){
+                    System.out.println("You have chosen a triangular based prism!");
+                }
+                if (number == 4){
+                    System.out.println("You have chosen a cylinder!");
+                }
+                if (number == 6){
+                    System.out.println("You have chosen a cone!");
+                }
+                else{
+                    break;
+                }
+            }
+            catch(Exception e){
+                i++;
+                System.out.println("Incorrect input!!");
+                System.out.println("Please enter a correct input!");
+        }
+                }
+            
+        
+        
+     
+
+        }
     }
-    
-}
