@@ -1,12 +1,12 @@
 
 package sdlc_assignment;
+
 import java.util.Scanner;
 
 /**
  *
  * @author S332629690
  */
-
 public class cube {
     
     static Scanner sc = new Scanner(System.in);
