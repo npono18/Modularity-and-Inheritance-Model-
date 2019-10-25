@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package sdlc_assignment;
 
 /**
@@ -37,20 +33,31 @@ public class SDLC_assignment {
                 if (number == 1){
                     System.out.println("You have chosen a cube!");
                     cube cube1 = new cube();
-                    
-
+                    cube.inputs();
+                    cube.outputs();
+                    break;
                 }
                 if (number == 2){
                     System.out.println("You have chosen a rectangular based prism!");
+                    rectangular_prism rectangular_prism1 = new rectangular_prism();
+                    rectangular_prism.inputs();
+                    rectangular_prism.outputs();
+                    break;
                 }
                 if (number == 3){
                     System.out.println("You have chosen a triangular based prism!");
+                    triangular_prism triangular_prism1 = new triangular_prism();
+                    triangular_prism.inputs();
+                    triangular_prism.outputs();
+                    break;
                 }
                 if (number == 4){
                     System.out.println("You have chosen a cylinder!");
+                    break;
                 }
                 if (number == 6){
                     System.out.println("You have chosen a cone!");
+                    break;
                 }
                 else{
                     break;
@@ -62,10 +69,5 @@ public class SDLC_assignment {
                 System.out.println("Please enter a correct input!");
         }
                 }
-            
-        
-        
-     
-
         }
     }

@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package sdlc_assignment;
 import java.util.Scanner;
 
@@ -12,15 +8,22 @@ import java.util.Scanner;
  */
 
 public class cube {
-Scanner sc = new Scanner(System.in);
-    int l;
-    double sa(double l, double w){
-        return(l*w*6);
+    
+    static Scanner sc = new Scanner(System.in);
+    static double l;
+    static double sa(double l){
+        return(l*l*6);
     }
-        void inputs(){
-        System.out.println("Please enter a length for your cube: ");
-        int l =sc.nextInt();
-
+    static double vo(double l){
+        return(l*l*l);
     }
+        static void inputs(){
+        System.out.println("Please enter a length for your cube in centimeters: ");
+        l =sc.nextDouble();
     }
-
+      static void outputs(){
+          System.out.println("The surface area of your cube is: "+ sa(l)+ " cm");
+          System.out.println("The volume of your cube is: "+ vo(l)+ " cm^3");
+      }
+}
+       
