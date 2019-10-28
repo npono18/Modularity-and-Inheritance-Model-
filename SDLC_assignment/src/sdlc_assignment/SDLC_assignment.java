@@ -33,30 +33,36 @@ public class SDLC_assignment {
                 if (number == 1){
                     System.out.println("You have chosen a cube!");
                     cube cube1 = new cube();
-                    cube.inputs();
-                    cube.outputs();
+                    cube1.inputs();
+                    cube1.outputs();
                     break;
                 }
                 if (number == 2){
                     System.out.println("You have chosen a rectangular based prism!");
                     rectangular_prism rectangular_prism1 = new rectangular_prism();
-                    rectangular_prism.inputs();
-                    rectangular_prism.outputs();
+                    rectangular_prism1.inputs();
+                    rectangular_prism1.outputs();
                     break;
                 }
                 if (number == 3){
                     System.out.println("You have chosen a triangular based prism!");
                     triangular_prism triangular_prism1 = new triangular_prism();
-                    triangular_prism.inputs();
-                    triangular_prism.outputs();
+                    triangular_prism1.inputs();
+                    triangular_prism1.outputs();
                     break;
                 }
                 if (number == 4){
                     System.out.println("You have chosen a cylinder!");
+                    cylinder cylinder1 = new cylinder();
+                    cylinder1.inputs();
+                    cylinder1.outputs();
                     break;
                 }
-                if (number == 6){
+                if (number == 5){
                     System.out.println("You have chosen a cone!");
+                    cone cone1 = new cone();
+                    cone1.inputs();
+                    cone1.outputs();
                     break;
                 }
                 else{

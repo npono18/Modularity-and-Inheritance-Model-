@@ -19,15 +19,26 @@ public class rectangular_prism {
     static double vo(double l, double w, double h){
         return(l*w*h);
     }
-        static void inputs(){
+        void inputs(){
+            while(true){
+                try{
         System.out.println("Please enter a length for your rectangular prism in centimeters: ");
         l =sc.nextDouble();
         System.out.println("Please enter a width for your rectangular prism in centimeters: ");
         w =sc.nextDouble();
         System.out.println("Please enter a height for your rectangular prism in centimeters: ");
         h =sc.nextDouble();
+        break;
+        }
+                catch(Exception e){
+                 System.out.println("Incorrect input!");
+                 System.out.println("Please enter a correct input!");
+                 sc.nextLine();
+                }
+          
+}
     }
-      static void outputs(){
+      void outputs(){
           System.out.println("The surface area of your rectangular prism is: "+ sa(l, w, h)+ " cm");
           System.out.println("The volume of your rectangular prism is: "+ vo(l, w, h)+ " cm^3");
       }

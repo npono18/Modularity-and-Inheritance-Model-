@@ -17,13 +17,25 @@ public class cube {
     static double vo(double l){
         return(l*l*l);
     }
-        static void inputs(){
+        void inputs(){
+         while(true){
+             try{
         System.out.println("Please enter a length for your cube in centimeters: ");
         l =sc.nextDouble();
+        break;
+         }
+             catch(Exception e){
+                 System.out.println("Incorrect input!");
+                 System.out.println("Please enter a correct input!");
+                 sc.nextLine();
+             }
+         }
     }
-      static void outputs(){
+      void outputs(){
           System.out.println("The surface area of your cube is: "+ sa(l)+ " cm");
           System.out.println("The volume of your cube is: "+ vo(l)+ " cm^3");
       }
+      
 }
+        
        

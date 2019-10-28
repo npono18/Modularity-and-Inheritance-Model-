@@ -20,7 +20,9 @@ public class triangular_prism {
     static double vo(double l, double h, double s){
         return(((s*l)/2)*h);
     }
-        static void inputs(){
+        void inputs(){
+            while(true){
+                try{
         System.out.println("Please enter a length for your triangular prism in centimeters: ");
         l =sc.nextDouble();
         System.out.println("Please enter a side measurement for your triangular prism in centimeters: ");
@@ -28,8 +30,16 @@ public class triangular_prism {
         System.out.println("Please enter a height for your triangular prism in centimeters: ");
         h =sc.nextDouble();
         System.out.println("Please enter a base for your triangular prism in centimeters: ");
+        break;
+        }
+                catch(Exception e){
+                 System.out.println("Incorrect input!");
+                 System.out.println("Please enter a correct input!");
+                 sc.nextLine();
+                }
+}
     }
-      static void outputs(){
+      void outputs(){
           System.out.println("The surface area of your triangular prism is: "+ sa(l, b, h, s)+ " cm");
           System.out.println("The volume of your triangular prism is: "+ vo(l, s, h)+ " cm^3");
       }
